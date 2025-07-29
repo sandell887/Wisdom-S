@@ -1,5 +1,8 @@
 {
   "rewrites": [
-    { "source": "/", "destination": "/Wisdoms.html" }
+    {
+      "source": "/",
+      "destination": "/Wisdoms.html"
+    }
   ]
 }
