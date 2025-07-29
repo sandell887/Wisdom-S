@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wisdom S</title>
+  <link rel="stylesheet" href="homestyle.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a2d1f5c7b0.js" crossorigin="anonymous"></script>
+  <style>
+    /* Adicione este CSS para o efeito 3D do tweet */
+    .tweet-container {
+      perspective: 800px;
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .tweet-container blockquote.twitter-tweet {
+      transform-style: preserve-3d;
+      transform: rotateY(-15deg) rotateX(5deg);
+      transition: transform 0.3s ease;
+      max-width: 550px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+      border-radius: 20px;
+      overflow: hidden;
+      background-color: #121212;
+    }
+
+    .tweet-container blockquote.twitter-tweet:hover {
+      transform: rotateY(0deg) rotateX(0deg) scale(1.05);
+      box-shadow: 0 15px 30px rgba(255, 115, 69, 0.7);
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      .tweet-container blockquote.twitter-tweet {
+        max-width: 100%;
+        transform: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="cursor-circle"></div>
+
+  <header class="hero fade-in">
+    <div class="container">
+       <h1>Wisdom <span class="vulto">S</span></h1>
+      <p>Inovação para Municípios Digitais e Escolas Inteligentes</p>
+      <nav class="menu">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contrate">Contrate</a> <!-- Atualizei menu para #contrate -->
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="sobre" class="section fade-in">
+  <div class="container grid-2">
+    <div class="text">
+      <h2>Quem Somos</h2>
+      <p>
+       Somos uma empresa de tecnologia especializada no desenvolvimento de sistemas, 
+        <strong>
+          <span style="color: #00FFFF;">robótica</span>, 
+          <span style="color: #FFFF00;">inovação</span> 
+          e <span style="color: #FF0213;">sistemas personalizados para prefeituras</span>.
+        </strong>
+      </p>
+      <p>
+        Nosso time é composto por engenheiros, educadores e especialistas em gestão pública, comprometidos em transformar a educação com tecnologia real.
+      </p>
+    </div>
+    <img src="src/LOGO0000000000000.png" alt="Equipe profissional" class="img-animada" />
+  </div>
+</section>
+
+
+  <section id="servicos" class="section dark-bg fade-in">
+    <div class="container">
+      <h2>Nossos Serviços</h2>
+      <ul class="grid">
+        <li><i class="fas fa-robot"></i><p>Laboratórios de Robótica e Makerspaces</p></li>
+        <li><i class="fas fa-laptop-code"></i><p>Desenvolvimento de Sistemas para Prefeituras</p></li>
+        <li><i class="fas fa-box"></i><p>Fornecimento de Kits Educacionais (LEGO, Arduino, etc)</p></li>
+        <li><i class="fas fa-file-invoice"></i><p>Participação em Licitações e Dispensas</p></li>
+        <li><i class="fas fa-user-graduate"></i><p>Capacitação Técnica de Professores</p></li>
+        <li><i class="fas fa-lightbulb"></i><p>Consultoria em Inovação Educacional</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Seção Contrate a Empresa via WhatsApp (moved above projetos) -->
+  <section id="contrate" class="section fade-in dark-bg">
+    <div class="container">
+      <h2>Contrate a Wisdom S</h2>
+      <p>Quer inovar na sua prefeitura ou escola? Envie uma mensagem para nosso WhatsApp e vamos conversar!</p>
+
+      <div class="whatsapp-form">
+        <input type="text" id="msg-whatsapp" placeholder="Digite sua mensagem aqui com seu nome..." />
+        <button id="btn-whatsapp" class="btn">Enviar WhatsApp</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Projetos de Sucesso -->
+  <section id="projetos" class="section fade-in">
+    <div class="container">
+      <h2>Projetos de Sucesso</h2>
+
+      <div class="grid-2 card-img">
+        <img src="src/certificadomundial.png" alt="Laboratório Maker" class="img-animada" />
+        <div>
+          <h3>Da sala de aula ao palco mundial</h3>
+          <p>a inovação educacional que transforma destinos.
+Em um momento histórico para a educação de São José de Ribamar, o fundador da nossa empresa entregou, em mãos, a carta convite que oficializa a participação do município na etapa mundial do campeonato de robótica que acontecerá na Coreia do Sul.</p>
+        </div>
+      </div>
+
+<div class="grid-2 card-img reverse">
+  <img src="src/mapeamento.png" alt="Sistema Web" class="img-animada efeito-3d" />
+  <div>
+    <h3>Sistemas Personalizados para Gestão Municipal</h3>
+    <p>Desenvolvemos plataformas web sob medida para atender às necessidades específicas de cada município ou gestão política. Nossos sistemas incluem soluções completas para mapeamento estratégico e gestão pública eficiente, com automações inteligentes que otimizam processos, identificam gargalos e apoiam a tomada de decisão. Ideal para prefeitos, secretarias e gestores que desejam transformar sua cidade com tecnologia, planejamento e inovação.</p>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  <!-- Seção Tweet do X com efeito 3D -->
+  <section id="twitter" class="section fade-in dark-bg">
+    <div class="container">
+      <h2>Última Publicação no X</h2>
+      <div class="tweet-container">
+        <blockquote class="twitter-tweet">
+          <a href="https://twitter.com/WisdomBlockCoin/status/1881859630642463165"></a>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="section dark-bg fade-in">
+    <div class="container">
+      <h2>Fale Conosco</h2>
+      <p>Quer transformar a educação da sua cidade? Fale com nosso time:</p>
+      <p><strong>Email:</strong> wisdombigrobot@gmail.com</p>
+      <p><strong>WhatsApp:</strong> (98) 992123342</p>
+      <a href="mailto:contato@inovatech.com.br" class="btn">Entrar em Contato</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Wisdom S. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Script JavaScript externo -->
+  <script src="script.js"></script>
+
+  <!-- Script para abrir WhatsApp com mensagem -->
+  <script>
+    document.getElementById('btn-whatsapp').addEventListener('click', () => {
+      const msg = encodeURIComponent(document.getElementById('msg-whatsapp').value.trim());
+      if (!msg) {
+        alert('Por favor, digite uma mensagem antes de enviar.');
+        return;
+      }
+      const phone = '5598992123342';
+      const url = `https://wa.me/${phone}?text=${msg}`;
+      window.open(url, '_blank');
+    });
+  </script>
+
+  <!-- Script Twitter Embed -->
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>
