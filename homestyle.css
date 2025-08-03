@@ -361,3 +361,13 @@ footer {
   transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1.02);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
 }
+
+
+.video-hover-effect {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.video-hover-effect:hover {
+  transform: scale(1.03);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
